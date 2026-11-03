@@ -1,0 +1,16 @@
+{
+  "name": "final-exam-practice",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "seed": "node scripts/seed.js",
+    "start": "node server.js solution",
+    "start:practice": "node server.js starter",
+    "test": "node scripts/test.js solution",
+    "test:practice": "node scripts/test.js starter",
+    "test:unit": "node scripts/test.js solution --testPathIgnorePatterns=integration",
+    "test:coverage": "node scripts/test.js solution --coverage"
+  },
+  "dependencies": { "express": "^4.19.2", "mysql2": "^3.11.0", "jsonwebtoken": "^9.0.2" },
+  "devDependencies": { "jest": "^29.7.0", "supertest": "^7.0.0" }
+}
